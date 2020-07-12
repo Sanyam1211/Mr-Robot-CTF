@@ -42,7 +42,7 @@ Got the second key finally!!!
 For 3rd and last key after thinking for a while what else i can do, i decided to check for programs having suid bit on and i also see the hint given(nmap)
 
 nmap has the suid bit set to on which works in interactive mode. That means we can get shell using that.
-t 
+
 
 
          
