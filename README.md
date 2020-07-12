@@ -3,14 +3,14 @@
 
 TASK 1 = Connect and deploy the machine
 
-TASK 2 = Before going further uou should make a practice to do some recon like nmap and dirb on the ip as it will help in future.
+TASK 2 = Before going further you should make a practice to do some recon like nmap and dirb on the ip as it will help in future.
 
 Key 1 = Follow the hint given
          (ip/robots.txt)
          
 Dirb results = After performing dirb on this ip we found many directories and so i have close look on each of them.
 In the license page i found some interesting texts and further scrolling down i got a Base64 encoded string.I used cyberchef to decode the string and i got a username and password.
-From my dirb scan i also got wp-login page.I have applied the credentionals i got earlier and we have successgully logged in.
+From my dirb scan i also got wp-login page.I have applied the credentionals i got earlier and we have successfully logged in.
 
 After login,I checked Users tab and find out that Elliot has administrative privileges. So the first thing that came to my mind was to upload reverse shell. I got this reverse shell from pentestmonkey . 
 Before using the shell remember to edit the php file for ip address and port
